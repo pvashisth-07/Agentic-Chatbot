@@ -1,5 +1,5 @@
 import streamlit as st
-from AgenticChatbot.src.langgraphagenticai.ui.streamlitui.loadui import LoadStreamlitUI
+from src.langgraphagenticai.ui.streamlitui.loadui import LoadStreamlitUI
 from src.langgraphagenticai.LLMS.groqllm import GroqLLM
 from src.langgraphagenticai.graph.graphbuilder import GraphBuilder
 from src.langgraphagenticai.ui.streamlitui.display_results import DisplayResultStreamlit
@@ -47,4 +47,3 @@ def load_langgraph_agenticai_app():
                 print(f"Graph setup failed. Error: {e}")
         except Exception as e:
             print(f"Error {e}")
-            
